@@ -1,0 +1,16 @@
+# Paste this into TrueNAS: Apps → Discover Apps → ⋮ → Install via YAML.
+# Change the three marked values first.
+services:
+  mealplanner:
+    image: ghcr.io/nigelfpv/mealplanner:latest
+    pull_policy: always
+    restart: unless-stopped
+    user: "568:568"
+    ports:
+      - "8420:8000"
+    environment:
+      BASE_URL: https://comida.mmrdrive.duckdns.org
+      APP_PASSWORD: "CHANGE-ME"                # <- your password for the app and for connecting Claude
+      TZ: Europe/Amsterdam
+    volumes:
+      - /mnt/POOL/apps/mealplanner:/data       # <- the dataset you created for the app's data

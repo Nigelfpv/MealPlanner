@@ -1,0 +1,19 @@
+{
+  "name": "Meal Planner",
+  "short_name": "Meals",
+  "start_url": "/#/plan",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f8fc",
+  "theme_color": "#1e3f8f",
+  "icons": [
+    { "src": "/static/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/static/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/static/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/static/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Shopping list", "url": "/#/shop" },
+    { "name": "Pantry", "url": "/#/pantry" }
+  ]
+}
